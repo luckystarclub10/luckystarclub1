@@ -1,0 +1,358 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+em {
+  font-family: "Lora", serif;
+}
+a {
+  text-decoration: none;
+}
+
+button:focus,
+button:active {
+  border: 1px solid #cdd8e0; /* this is the same as the "normal" state border */
+  outline: 0;
+}
+
+.wrap {
+  max-width: 1280px;
+}
+/* Font Size */
+.font-small {
+  font-size: 0.8rem !important;
+}
+.font-medium {
+  font-size: 1.2rem !important;
+  line-height: 30px;
+}
+.font-large {
+  font-size: 1.5rem !important;
+}
+.font-1 {
+  font-size: 1rem !important;
+}
+.font-2 {
+  font-size: 2rem !important;
+}
+.font-3 {
+  font-size: 3rem !important;
+}
+
+.text-shadow {
+  text-shadow: 1px 2px 10px #000000bf;
+}
+
+/* Box Shadow */
+.elevate-1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.elevate-2 {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.elevate-3 {
+  box-shadow: 0 7px 25px 0 rgba(0, 0, 0, 0.05);
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); */
+}
+.elevate-4 {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.elevate-5 {
+  box-shadow: 0 50px 60px 0 rgba(7, 116, 128, 0.2);
+  /* box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); */
+}
+
+/* Background Color */
+.bg-gray {
+  background-color: #f9f9f9;
+}
+.bg-icon {
+  background-color: #7bc4e6;
+}
+
+.pt-30 {
+  padding-top: 30vh;
+}
+.pt-40 {
+  padding-top: 40vh;
+}
+
+/* Width */
+
+.w-90p {
+  width: 90px;
+}
+.w-95p {
+  width: 95px;
+}
+.w-190p {
+  width: 190px !important;
+}
+
+/* Image Size */
+.square-50 {
+  width: 50px;
+  height: 50px;
+}
+.square-60 {
+  width: 60px;
+  height: 60px;
+}
+.img-60 {
+  width: 60px;
+  height: auto;
+}
+
+.img-70 {
+  width: 70px !important;
+  height: auto;
+}
+
+.img-80 {
+  width: 80px;
+  height: auto;
+}
+
+.img-90 {
+  width: 90px;
+  height: auto;
+}
+
+.img-120 {
+  width: 120px !important;
+  height: auto;
+}
+
+.img-150 {
+  width: 150px !important;
+  height: auto !important;
+}
+
+/* NavBar */
+.navbar-nav .nav-item a {
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  /* ...and now for the proper property */
+  transition: 0.5s;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: #494646 !important;
+}
+.calc {
+  border-radius: 5px;
+  border: 1px solid #c5c5c5;
+  padding: 7px;
+  width: 400px;
+  height: 200px;
+  background: #fff;
+}
+
+/* Banner Image */
+.banner-carousel {
+  background-color: #f9f9f9;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #2c2c2c48;
+  z-index: 999;
+}
+.banner-image img:first-child {
+  height: 600px;
+  object-fit: cover;
+}
+.store {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.caption {
+  position: absolute;
+  font-size: 1.5em;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.section-title h2 {
+  padding: 0 20px;
+  margin: 0;
+  overflow: hidden;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -1px;
+  font-weight: 500;
+  color: #303030;
+}
+.section-title h2:before,
+.section-title h2:after {
+  content: "";
+  width: 100%;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.09);
+  display: inline-block;
+  vertical-align: middle;
+}
+.section-title.text-center h2:before,
+.section-title.text-center h2:after {
+  width: 100px;
+}
+.section-title h2:before {
+  margin-left: -100%;
+  margin-right: 20px;
+}
+.section-title h2:after {
+  margin-right: -100%;
+  margin-left: 20px;
+}
+.section-title.no-line h2 {
+  padding: 0;
+}
+.section-title.no-line h2:before,
+.section-title.no-line h2:after {
+  display: none;
+}
+/*  */
+.numbered {
+  counter-reset: stepsNum;
+}
+.numbered .number {
+  counter-increment: stepsNum;
+  color: #7bc4e6;
+}
+.numbered .number:before {
+  content: counter(stepsNum, decimal);
+}
+.numbered .number:after {
+  content: ".";
+  padding-right: 5px;
+}
+.process .content {
+  padding: 20px 20px 30px 20px;
+  position: relative;
+}
+.process.numbered .number {
+  position: absolute;
+  left: 0px;
+  top: -30px;
+  font-size: 70px;
+  color: #303030;
+  opacity: 0.07;
+  font-family: "Lora", serif;
+  font-weight: bold;
+  font-style: italic;
+  z-index: 0;
+}
+.process.numbered .number:before {
+  content: counter(stepsNum, decimal-leading-zero) !important;
+}
+.process.numbered .number:after {
+  display: none;
+}
+.parallax-section {
+  background-color: #f9f9f97b;
+  background-image: url(assets/images/art/parallax3-1.jpg);
+  height: 300px;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.service {
+  border-radius: 10px;
+  border: 1px solid #c2c2c2;
+  padding: 10px;
+  width: 150px;
+  height: 100px;
+  margin: 10px;
+}
+
+.nav-tabs .nav-item .nav-link {
+  color: #000;
+  padding-left: 0;
+  padding-right: 0;
+}
+.nav-tabs > li {
+  margin: 0 25px 0 0;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #7bc4e6;
+  border: none;
+  border-bottom: 2px #7bc4e6 solid;
+}
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  border-color: #fff;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Clients */
+.clients .item img {
+  width: auto;
+  max-width: 100%;
+}
+
+#googlemaps-canvas img {
+  max-height: none;
+  max-width: none !important;
+  background: none !important;
+}
+
+.footer {
+  background-color: #303030;
+}
+
+@media only screen and (max-width: 992px) {
+  .parallax-section {
+    height: 600px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .banner-image img:first-child {
+    height: 350px;
+  }
+  .banner-image h1 {
+    font-size: 1.5rem;
+  }
+  .banner-image p {
+    font-size: 1rem;
+  }
+  .banner-image button {
+    font-size: 0.8rem;
+  }
+  .store span {
+    font-size: 0.7rem;
+  }
+  .store img {
+    width: 120px !important;
+  }
+  .banner-image .pt-30 {
+    padding-top: 10vh;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .banner-image h1 {
+    font-size: 1rem;
+  }
+  .banner-image p {
+    font-size: 0.8rem;
+  }
+}
